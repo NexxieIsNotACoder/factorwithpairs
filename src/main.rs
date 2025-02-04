@@ -14,12 +14,12 @@ fn main() {
     // since the factor function returns an array, we just print everything from the array
     let factors = factor(input);
     for element in factors.iter() {
-        print!(" {element}");
+        print!(" {element},");
     }
     println!();
     println!("Factor pairs: ");
     for element in factors.iter() {
         // creates the pairs by dividing the input number by one of the factors to get... another factor! 
-        print!(" ({}, {})", element, input / element);
+        print!(" ({}, {}) OR", element, input / element);
     }
 }
